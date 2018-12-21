@@ -24,7 +24,7 @@ fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)
 var accessLogStream = rfs(helpers.generator(date, 'demo'), {
     size: '10M', // rotate every 10 MegaBytes written
     interval: '1d',  // rotate daily
-    compress: 'gzip', // compress rotated files
+    compress: 'gzip', // compress rotated filess
     path: logDirectory
 })
 
