@@ -1,0 +1,46 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\thangtm13\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\thangtm13\AppData\Local\Microsoft\WindowsApps;C:\Users\thangtm13\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thangtm13\AppData\Roaming\npm;C:\Users\thangtm13\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND proxy.fpt.vn proxy.fpt.vn:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+
+npm manifest: 
+  {
+    "name": "example-node-server",
+    "version": "1.0.0",
+    "description": "Example Node Server w/ Babel",
+    "main": "lib/index.js",
+    "scripts": {
+      "build": "babel lib -d dist",
+      "start": "npm run build && nodemon dist/index.js",
+      "serve": "npm run build && node dist/index.js",
+      "test": "npm run build && mocha --require babel-register"
+    },
+    "author": "James Kyle <me@thejameskyle.com>",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "mocha": "^5.2.0",
+      "nodemon": "^1.17.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
